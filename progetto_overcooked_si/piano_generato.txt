@@ -1,0 +1,165 @@
+--- PIANO GENERATO PER IL level 2 ---
+
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 57
+Aibr Preprocessing
+UFX:false
+|F|:107
+|X|:6
+|A|:400
+|P|:0
+|E|:0
+Numeric Error for Complex Condition Activated
+H1 Setup Time (msec): 19
+h(I):2878.0
+ g(n)= 1.0 h(n)=2208.0
+ g(n)= 2.0 h(n)=2056.0
+ g(n)= 3.0 h(n)=1922.0
+ g(n)= 4.0 h(n)=1734.0
+ g(n)= 5.0 h(n)=1600.0
+ g(n)= 7.0 h(n)=1438.0
+ g(n)= 8.0 h(n)=1366.0
+ g(n)= 9.0 h(n)=1294.0
+ g(n)= 10.0 h(n)=1258.0
+ g(n)= 11.0 h(n)=1204.0
+ g(n)= 14.0 h(n)=1186.0
+ g(n)= 13.0 h(n)=1042.0
+ g(n)= 14.0 h(n)=970.0
+ g(n)= 15.0 h(n)=898.0
+ g(n)= 16.0 h(n)=862.0
+ g(n)= 17.0 h(n)=808.0
+ g(n)= 18.0 h(n)=732.0
+ g(n)= 19.0 h(n)=646.0
+ g(n)= 20.0 h(n)=574.0
+ g(n)= 21.0 h(n)=502.0
+ g(n)= 22.0 h(n)=444.0
+ g(n)= 23.0 h(n)=354.0
+ g(n)= 24.0 h(n)=282.0
+ g(n)= 25.0 h(n)=230.0
+ g(n)= 26.0 h(n)=178.0
+ g(n)= 27.0 h(n)=152.0
+ g(n)= 28.0 h(n)=126.0
+ g(n)= 29.0 h(n)=122.0
+ g(n)= 30.0 h(n)=106.0
+ g(n)= 31.0 h(n)=78.0
+ g(n)= 34.0 h(n)=73.0
+-------------Time: 10s ; Expanded Nodes: 23418 (Avg-Speed 2341.0 n/s); Evaluated States: 50557
+ g(n)= 53.0 h(n)=55.0
+ g(n)= 54.0 h(n)=45.0
+ g(n)= 55.0 h(n)=35.0
+ g(n)= 56.0 h(n)=30.0
+ g(n)= 57.0 h(n)=24.0
+ g(n)= 58.0 h(n)=17.0
+ g(n)= 65.0 h(n)=16.0
+ g(n)= 83.0 h(n)=15.0
+ g(n)= 84.0 h(n)=11.0
+ g(n)= 85.0 h(n)=9.0
+ g(n)= 86.0 h(n)=7.0
+ g(n)= 87.0 h(n)=4.0
+ g(n)= 88.0 h(n)=2.0
+ g(n)= 89.0 h(n)=1.0
+Problem Solved
+
+Found Plan:
+0.0: (moveTo c2 delivery_area storage)
+1.0: (moveTo c1 delivery_area dish_washer)
+2.0: (pickup_plate_from_dish_washer p2 c1)
+3.0: (moveTo c1 dish_washer plate_table)
+4.0: (drop_clean_plate p2 c1 ps2)
+5.0: (moveTo c1 plate_table storage)
+6.0: (pickup_ingredient_from_storage i5 c1 type_meat o1)
+7.0: (moveTo c1 storage grill)
+8.0: (cook_meat i5 c1)
+9.0: (moveTo c1 grill plate_table)
+10.0: (add_ingredient_to_plate ps2 c1 p2 i5 o1 type_meat)
+11.0: (moveTo c1 plate_table storage)
+12.0: (pickup_ingredient_from_storage i1 c2 type_bread o1)
+13.0: (moveTo c2 storage chopping_station)
+14.0: (prepare_bread i1 c2)
+15.0: (moveTo c2 chopping_station plate_table)
+16.0: (add_ingredient_to_plate ps2 c2 p2 i1 o1 type_bread)
+17.0: (pickup_ingredient_from_storage i4 c1 type_salad o1)
+18.0: (moveTo c2 plate_table storage)
+19.0: (moveTo c1 storage chopping_station)
+20.0: (chop_ing i4 c1)
+21.0: (pickup_ingredient_from_storage i2 c2 type_tomato o1)
+22.0: (moveTo c1 chopping_station plate_table)
+23.0: (add_ingredient_to_plate ps2 c1 p2 i4 o1 type_salad)
+24.0: (moveTo c2 storage chopping_station)
+25.0: (chop_ing i2 c2)
+26.0: (moveTo c2 chopping_station plate_table)
+27.0: (add_ingredient_to_plate ps2 c2 p2 i2 o1 type_tomato)
+28.0: (order_ready o1 p2)
+29.0: (pick_up_ready_order c1 p2 ps2 o1)
+30.0: (moveTo c1 plate_table delivery_area)
+31.0: (moveTo c2 plate_table dish_washer)
+32.0: (pickup_plate_from_dish_washer p1 c2)
+33.0: (moveTo c2 dish_washer plate_table)
+34.0: (drop_clean_plate p1 c2 ps2)
+35.0: (moveTo c2 plate_table storage)
+36.0: (pickup_ingredient_from_storage i3 c2 type_meat o1)
+37.0: (moveTo c2 storage grill)
+38.0: (cook_meat i3 c2)
+39.0: (moveTo c2 grill plate_table)
+40.0: (add_ingredient_to_plate ps2 c2 p1 i3 o1 type_meat)
+41.0: (moveTo c2 plate_table storage)
+42.0: (deliver_order c1 p2 o1 o2)
+43.0: (moveTo c1 delivery_area plate_table)
+44.0: (pickup_ingredient_from_storage i1 c2 type_bread o2)
+45.0: (moveTo c1 plate_table storage)
+46.0: (pickup_ingredient_from_storage i4 c1 type_salad o2)
+47.0: (moveTo c2 storage chopping_station)
+48.0: (moveTo c1 storage chopping_station)
+49.0: (prepare_bread i1 c2)
+50.0: (moveTo c2 chopping_station plate_table)
+51.0: (chop_ing i4 c1)
+52.0: (add_ingredient_to_plate ps2 c2 p1 i1 o2 type_bread)
+53.0: (moveTo c1 chopping_station plate_table)
+54.0: (add_ingredient_to_plate ps2 c1 p1 i4 o2 type_salad)
+55.0: (order_ready o2 p1)
+56.0: (pick_up_ready_order c1 p1 ps2 o2)
+57.0: (moveTo c1 plate_table delivery_area)
+58.0: (moveTo c2 plate_table dirty_area)
+59.0: (pickup_plate_from_dirty_area p2 c2)
+60.0: (moveTo c2 dirty_area dish_washer)
+61.0: (deposit_plate_at_dish_washer c2 p2)
+62.0: (start_dish_washer c2)
+63.0: (pickup_plate_from_dish_washer p2 c2)
+64.0: (moveTo c2 dish_washer plate_table)
+65.0: (drop_clean_plate p2 c2 ps1)
+66.0: (moveTo c2 plate_table storage)
+67.0: (pickup_ingredient_from_storage i5 c2 type_meat o2)
+68.0: (moveTo c2 storage grill)
+69.0: (cook_meat i5 c2)
+70.0: (moveTo c2 grill plate_table)
+71.0: (add_ingredient_to_plate ps1 c2 p2 i5 o2 type_meat)
+72.0: (moveTo c2 plate_table storage)
+73.0: (deliver_order c1 p1 o2 o3)
+74.0: (moveTo c1 delivery_area plate_table)
+75.0: (pickup_ingredient_from_storage i1 c2 type_bread o3)
+76.0: (moveTo c1 plate_table storage)
+77.0: (pickup_ingredient_from_storage i4 c1 type_salad o3)
+78.0: (moveTo c2 storage chopping_station)
+79.0: (moveTo c1 storage chopping_station)
+80.0: (prepare_bread i1 c2)
+81.0: (moveTo c2 chopping_station plate_table)
+82.0: (chop_ing i4 c1)
+83.0: (add_ingredient_to_plate ps1 c2 p2 i1 o3 type_bread)
+84.0: (moveTo c1 chopping_station plate_table)
+85.0: (add_ingredient_to_plate ps1 c1 p2 i4 o3 type_salad)
+86.0: (order_ready o3 p2)
+87.0: (pick_up_ready_order c2 p2 ps1 o3)
+88.0: (moveTo c2 plate_table delivery_area)
+89.0: (deliver_order c2 p2 o3 o3)
+
+Plan-Length:90
+Metric (Search):90.0
+Planning Time (msec): 18987
+Heuristic Time (msec): 18012
+Search Time (msec): 18983
+Expanded Nodes:61921
+States Evaluated:110960
+Number of Dead-Ends detected:22913
+Number of Duplicates detected:854041
