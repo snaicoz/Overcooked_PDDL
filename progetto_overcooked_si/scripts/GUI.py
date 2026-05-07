@@ -506,7 +506,7 @@ def load_level(chosen_level):
 
 #Funzione per chiedere il prossimo livello
 def ask_next_level():
-    level = screen.numinput("Overcooked", "Scegli il livello (1-5):", minval=1, maxval=5)
+    level = screen.numinput("Overcooked", "Scegli il livello (1-6):", minval=1, maxval=6)
     if level:
         load_level(level)
 
@@ -596,7 +596,7 @@ screen.update()
 screen.tracer(1)
 
 #Avvio iniziale
-chosen_level = screen.numinput("Overcooked", "Scegli il livello (1-5):", minval=1, maxval=5)
+chosen_level = screen.numinput("Overcooked", "Scegli il livello (1-6):", minval=1, maxval=6)
 if chosen_level:
     load_level(chosen_level)
 
